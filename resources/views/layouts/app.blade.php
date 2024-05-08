@@ -62,6 +62,25 @@
             white-space: nowrap;
             border-width: 0;
     }
+    .sub-btn{
+        background-color: green;
+        width: 80%;
+        color: white;
+        padding: 1%;
+        border-radius: 8px;
+        margin-top:8%;
+        margin-left: 10%;
+        padding-left: 3%;
+    }
+    .error-txt{
+        color:red;
+        font-size: 13px;
+        margin-left:5px;
+    }
+    .phn:focus{
+        width: 100%;
+        border: magenta;
+    }
    
 </style>
 <body>
