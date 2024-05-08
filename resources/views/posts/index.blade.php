@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    Index
+   <div class="wrap">
+        <div class="wrap1">
+            Posts
+        </div>
+
+   </div>
 @endsection
