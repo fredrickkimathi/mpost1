@@ -45,11 +45,19 @@
     .reg-form{
         display: flex;
         justify-content: space-between;
-        padding: 1%;
+        /* padding: 1%; */
         border: 2px solid gray;
         border-radius: 12px;
+        
         margin-top:2%;
-        padding-left: 3%;
+        /* padding-left: 3%; */
+    }
+    .phn{
+        padding: 2%; 
+        padding-left: 3%; 
+        border-radius: 12px;
+        
+
     }
     .sr-only{
             position: absolute;
@@ -66,7 +74,7 @@
         background-color: green;
         width: 80%;
         color: white;
-        padding: 1%;
+        padding: 2%;
         border-radius: 8px;
         margin-top:8%;
         margin-left: 10%;
@@ -94,12 +102,20 @@
                 <li ><a href="">Posts</a></li>
             </ul>
             <ul class="lists">
-                <li >
-                    <a href="">Fredrick Kimathi</a>
-                </li>
-                <li ><a href="">Login</a></li>
-                <li ><a href="{{ route('register') }}">Register</a></li>
-                <li ><a href="">Logout</a></li>
+                @auth
+                    <li >
+                        <a href="">Fredrick Kimathi</a>
+                    </li>  
+                    <li ><a href="">Logout</a></li>   
+                @endauth
+
+                @guest
+                    <li ><a href="{{route ('login')}}">Login</a></li>
+                    <li ><a href="{{ route('register') }}">Register</a></li>
+                @endguest
+                
+                
+                
             </ul>
         </nav>
         

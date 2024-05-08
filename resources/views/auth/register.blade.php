@@ -3,6 +3,7 @@
 @section('content')
    <div class="wrap">
         <div class="wrap2">
+            <h1 style="text-align:center; font-size: 25px; font-weight:bold; margin-bottom:7%;">Register</h1>
             <form action="{{ route('register') }}" method="post">
                 @csrf
                 <div class="reg-form" style="@error('name') border:2px solid red; @enderror  "    >
@@ -29,7 +30,7 @@
 
                 <div class="reg-form" style="@error('name') border:2px solid red; @enderror">
                     <label for="email" class="sr-only"> Email: </label>
-                    <input type="text" name="email" id="email" placeholder="Your Email" style="width:100%; height:100%" value="{{ old('email') }}">
+                    <input type="text" name="email" id="email" placeholder="Your Email" class="phn"style="width:100%; height:100%" value="{{ old('email') }}">
                 </div>
                 @error('email')
                         <div class="error-txt">
