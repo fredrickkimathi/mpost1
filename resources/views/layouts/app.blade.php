@@ -96,9 +96,9 @@
         <nav class="nav-b">
             <ul class="lists">
                 <li >
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
                 </li>
-                <li ><a href="">Dashboard</a></li>
+                <li ><a href="{{route('dashboard')}}">Dashboard</a></li>
                 <li ><a href="">Posts</a></li>
             </ul>
             <ul class="lists">
@@ -106,7 +106,13 @@
                     <li >
                         <a href="">Fredrick Kimathi</a>
                     </li>  
-                    <li ><a href="">Logout</a></li>   
+                    <li >
+                        <form action="{{route('logout')}}" method="post">
+                            @csrf
+                            <button type="submit">Logout</button>
+                        </form>
+                        
+                    </li>   
                 @endauth
 
                 @guest
