@@ -42,6 +42,26 @@
         margin-top: 3%;
         border-radius: 12px;
     }
+    .reg-form{
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+        border: 2px solid gray;
+        border-radius: 12px;
+        margin-top:2%;
+        padding-left: 3%;
+    }
+    .sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+    }
    
 </style>
 <body>
