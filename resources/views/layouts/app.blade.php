@@ -104,7 +104,7 @@
             <ul class="lists">
                 @auth
                     <li >
-                        <a href="">Fredrick Kimathi</a>
+                        <a href="">{{auth()->user()->name}}</a>
                     </li>  
                     <li >
                         <form action="{{route('logout')}}" method="post">
