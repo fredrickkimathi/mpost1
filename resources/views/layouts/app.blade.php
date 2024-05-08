@@ -35,6 +35,13 @@
         margin-top: 3%;
         border-radius: 12px;
     }
+    .wrap2{
+        width: 40%;
+        background-color: white;
+        padding: 1% 2%;
+        margin-top: 3%;
+        border-radius: 12px;
+    }
    
 </style>
 <body>
@@ -52,7 +59,7 @@
                     <a href="">Fredrick Kimathi</a>
                 </li>
                 <li ><a href="">Login</a></li>
-                <li ><a href="">Register</a></li>
+                <li ><a href="{{ route('register') }}">Register</a></li>
                 <li ><a href="">Logout</a></li>
             </ul>
         </nav>
