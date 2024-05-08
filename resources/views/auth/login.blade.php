@@ -39,7 +39,12 @@
                         </div>
                     @enderror
 
-               
+                
+                    <div style="margin:2% 2%;color:gray; font-size: 14px;">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember" >Remember Me</label>
+                    </div>
+                
 
                 <button type="submit" class="sub-btn">Login</button>
 
