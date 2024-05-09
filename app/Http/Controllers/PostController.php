@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(5); //returns all posts in the database in order
+        $posts = Post::with(['user', 'likes'])->paginate(5); //returns all posts in the database in order
         return view('posts.index', [
             'posts' => $posts
         ]);
