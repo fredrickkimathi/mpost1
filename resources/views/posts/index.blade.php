@@ -2,7 +2,7 @@
 
 @section('content')
    <div class="wrap">
-        < class="wrap1">
+        <div class="wrap1">
             <form action="{{ route('posts') }}" method="post">
             @csrf
 
