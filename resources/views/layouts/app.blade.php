@@ -89,6 +89,18 @@
         width: 100%;
         border: magenta;
     }
+    .mb-4{
+        margin-top: 10px;
+        border: 2px solid cyan;
+        border-radius: 12px;
+    
+    }
+    .ta1{
+        width:100%;
+        height:20%;
+        padding: 5%;
+    }
+   
    
 </style>
 <body>
@@ -99,12 +111,12 @@
                     <a href="/">Home</a>
                 </li>
                 <li ><a href="{{route('dashboard')}}">Dashboard</a></li>
-                <li ><a href="">Posts</a></li>
+                <li ><a href="{{ route('posts') }}">Posts</a></li>
             </ul>
             <ul class="lists">
                 @auth
                     <li >
-                        <a href="">{{auth()->user()->username}}</a>
+                        <a href="">{{auth()->user()->name}}</a>
                     </li>  
                     <li >
                         <form action="{{route('logout')}}" method="post">
