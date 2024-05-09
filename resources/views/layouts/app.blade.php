@@ -98,7 +98,9 @@
     .ta1{
         width:100%;
         height:20%;
-        padding: 5%;
+        padding: 1%;
+        padding-bottom: 15%;
+
     }
    
    
