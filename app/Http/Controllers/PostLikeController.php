@@ -7,7 +7,7 @@ Use App\Models\Post;
 
 class PostLikeController extends Controller
 {
-    public function __coonstruct(){
+    public function __construct(){
         $this->middleware(['auth']);
     }
     public function store(Post $post, Request $request)

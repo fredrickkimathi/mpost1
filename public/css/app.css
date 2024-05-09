@@ -530,6 +530,12 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .flex {
   display: flex;
 }
@@ -573,6 +579,15 @@ video {
 }
 .pb-4 {
   padding-bottom: 1rem;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pt-12 {
+  padding-top: 3rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-blue-500 {
   --tw-text-opacity: 1;
