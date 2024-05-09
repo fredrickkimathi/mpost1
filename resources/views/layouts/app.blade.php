@@ -95,6 +95,16 @@
         border-radius: 12px;
     
     }
+    .mb-5{
+        margin: 10px;
+    }
+    .p-text{
+        font-weight:bold;
+    }
+    .p-text1{
+        color: gray;
+        font-size:12px;
+    }
     .ta1{
         width:100%;
         height:20%;

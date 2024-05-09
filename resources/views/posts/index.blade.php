@@ -23,6 +23,19 @@
             </div>
         
             </form>
+            @if($posts->count())
+                @foreach ($posts as $post )
+
+                    <div class="mb-5">
+                        <a href="" class="p-text">{{$post->user->username}}</a><span class="p-text1">date</span>
+
+                        <p>{{$post->body}}</p>
+                    </div>
+                 @endforeach
+            @else
+                <p>There are no posts</p>
+            @endif
+
         </div>
 
    </div>
