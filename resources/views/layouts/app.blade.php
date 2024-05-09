@@ -104,6 +104,7 @@
     .p-text1{
         color: gray;
         font-size:12px;
+        padding-left:1%;
     }
     .ta1{
         width:100%;
@@ -115,8 +116,8 @@
    
    
 </style>
-<body>
-    <body class="bd">
+<body class="bg-cyan-200">
+    <div class="bd">
         <nav class="nav-b">
             <ul class="lists">
                 <li >
@@ -149,7 +150,7 @@
             </ul>
         </nav>
         
-    </body>
+    </div>
     @yield('content')
 </body>
 </html>

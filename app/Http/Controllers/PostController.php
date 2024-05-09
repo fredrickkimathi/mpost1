@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::get(); //returns all posts in the database in order
+        $posts = Post::paginate(2); //returns all posts in the database in order
         return view('posts.index', [
             'posts' => $posts
         ]);
