@@ -80,6 +80,15 @@
         margin-left: 10%;
         padding-left: 3%;
     }
+    .sub-btn1{
+        background-color: green;
+        width: 70%;
+        color: white;
+        padding: 1%;
+        border-radius: 8px;  
+        margin-left: 10%;
+        padding-left: 3%;
+    }
     .error-txt{
         color:red;
         font-size: 13px;
